@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import LoginModal from "../auth/LoginModal";
 import { CustomUser } from "@/app/api/auth/[...nextauth]/options";
 import Link from "next/link";
+import LoginModal from "../auth/LoginModal";
 
 export default function Navbar({ user }: { user?: CustomUser }) {
   return (
