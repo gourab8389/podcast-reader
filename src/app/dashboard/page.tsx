@@ -18,7 +18,7 @@ export default async function dashboard() {
       <div className="mt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {oldSummaries.length > 0 &&
-            oldSummaries.map((item, index) => (
+            oldSummaries.map((item: any, index: React.Key | null | undefined) => (
               <OldSummaryCard key={index} summary={item} />
             ))}
         </div>
