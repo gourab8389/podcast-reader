@@ -4,8 +4,9 @@ import axios, { AxiosError } from "axios";
 import React, { useState } from "react";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
-import Loading from "../common/Loading";
+
 import { clearCache } from "@/actions/commonActions";
+import Loading from "../common/Loading";
 
 export default function UrlInput({ user }: { user: CustomUser }) {
   const router = useRouter();

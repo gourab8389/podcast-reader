@@ -8,10 +8,10 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import UserAvatar from "./UserAvatar";
 import { CustomUser } from "@/app/api/auth/[...nextauth]/options";
 import LogoutModal from "../auth/LogoutModal";
 import { useRouter } from "next/navigation";
+import UserAvatar from "./UserAvatar";
 
 export default function ProfileDropdown({ user }: { user: CustomUser | null }) {
   const [open, setOpen] = useState(false);
